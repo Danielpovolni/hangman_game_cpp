@@ -5,6 +5,7 @@ using namespace std;
 
 int main(){
     string word;
+    cout << "Enter word you want to guest: ";
     cin >> word;
     char guest;
 
@@ -14,14 +15,13 @@ int main(){
     char alphabet2[] = {'_','_','_','_','_','_','_','_','_','_','_','_','_','_','_','_','_','_','_','_','_','_','_','_','_','_'};
     int length_of_word = word.length();
     while(bool1 == false){
+        cout << "Enter letter you want to quest: ";
         cin >> guest;
         for(int i =0;i < length_of_word;i++){
             if(guest==word[i]){
-                alphabet2[i]=guest;}}
-
-        for(int y=0;y<length_of_word;y++){
-        cout << alphabet2[y];}
+                alphabet2[i]=guest;}
+            cout << alphabet2[i];
+            }
+            cout << endl;
     }
-
     }
-
